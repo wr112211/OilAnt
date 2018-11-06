@@ -178,10 +178,19 @@ class IndentMessageViewController: UIViewController, MAMapViewDelegate, AMapSear
         print("路径规划失败", error)
     }
     
+    //返回按钮点击响应
+    @objc func backToPrevious(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(panelView)
+        
+        let leftBarBtn = UIBarButtonItem(title: "返回", style: .plain, target: self,
+                                         action: #selector(backToPrevious))
+        self.navigationItem.leftBarButtonItem = leftBarBtn
         
         navigationItem.largeTitleDisplayMode = .never
         

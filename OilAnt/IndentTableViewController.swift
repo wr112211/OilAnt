@@ -311,6 +311,13 @@ class IndentTableViewController: UITableViewController {
     }
     */
     
+   
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ShowMapView", sender: "indentview")
+    }
+    
+    
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -318,9 +325,15 @@ class IndentTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         let row = tableView.indexPathForSelectedRow!.row
-        let destination = segue.destination as! IndentMessageViewController
-        
-        destination.idStr = String(row);
+        let destination = segue.destination as! UINavigationController
+//                let controller = (destination.viewControllers.first as! IndentMessageViewController)
+        //
+        //        controller.idStr = (sender as? String)!
+        if segue.identifier == "ShowMapView"{
+            let controller = (destination.viewControllers.first as! IndentMessageViewController)
+
+             controller.idStr = "indentview \(row)"
+        }
     }
     
     /*

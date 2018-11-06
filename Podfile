@@ -14,6 +14,7 @@ target 'OilAnt' do
   pod 'AMapSearch'
   pod 'AMapLocation'
   pod 'AMapNavi'
+  pod 'SnapKit'
   
 
   target 'OilAntTests' do

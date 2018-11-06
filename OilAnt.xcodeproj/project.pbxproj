@@ -23,6 +23,7 @@
 		1AD8191921904CAF005B98A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8191721904CAF005B98A3 /* LaunchScreen.storyboard */; };
 		1AD8192421904CAF005B98A3 /* OilAntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8192321904CAF005B98A3 /* OilAntTests.swift */; };
 		1AD8192F21904CAF005B98A3 /* OilAntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8192E21904CAF005B98A3 /* OilAntUITests.swift */; };
+		1AE24F7D2191938900EA6BCB /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE24F7C2191938900EA6BCB /* DriverViewController.swift */; };
 		1AFBEE062191517200B53E3B /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBEE052191517200B53E3B /* DriverTableViewController.swift */; };
 		5E9B4FBBDDF7CF3C764AA294 /* Pods_OilAntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6400505DB8B48C7228B8EF2 /* Pods_OilAntTests.framework */; };
 		CCAD7710D8E399E1936C728B /* Pods_OilAnt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9146AEBE2081C678C55F224 /* Pods_OilAnt.framework */; };
@@ -71,6 +72,7 @@
 		1AD8192E21904CAF005B98A3 /* OilAntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilAntUITests.swift; sourceTree = "<group>"; };
 		1AD8193021904CAF005B98A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OilAnt-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AE24F7C2191938900EA6BCB /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		1AFBEE052191517200B53E3B /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
 		249677DA3816872398AD5753 /* Pods-OilAntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OilAntTests/Pods-OilAntTests.release.xcconfig"; sourceTree = "<group>"; };
 		6461BF60C284A3F7B2E4568E /* Pods_OilAntUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OilAntUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				1A18000021913C9100D98728 /* IndentStateCell.swift */,
 				1A18000421913F3B00D98728 /* MineTableViewController.swift */,
 				1AFBEE052191517200B53E3B /* DriverTableViewController.swift */,
+				1AE24F7C2191938900EA6BCB /* DriverViewController.swift */,
 			);
 			path = OilAnt;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -420,6 +424,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,6 +466,7 @@
 				1A71F0A9219134090015217A /* LoginViewController.swift in Sources */,
 				1AD8191121904C98005B98A3 /* ViewController.swift in Sources */,
 				1AFBEE062191517200B53E3B /* DriverTableViewController.swift in Sources */,
+				1AE24F7D2191938900EA6BCB /* DriverViewController.swift in Sources */,
 				1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */,
 				1A71F0A72191335C0015217A /* IndentCell.swift in Sources */,
 				1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */,
