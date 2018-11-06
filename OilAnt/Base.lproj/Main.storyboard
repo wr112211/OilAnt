@@ -486,7 +486,7 @@
                         <outlet property="userCompany" destination="EJK-gL-zFp" id="ZIT-c9-jqb"/>
                         <outlet property="userIcon" destination="Rw5-6M-WOJ" id="4lL-SJ-V01"/>
                         <outlet property="userName" destination="ijj-3I-GbV" id="WeR-Kc-7V5"/>
-                        <segue destination="oQt-pA-7M8" kind="showDetail" identifier="ShowDriverView" id="uOR-0P-tQS"/>
+                        <segue destination="Cs5-nA-GOj" kind="showDetail" identifier="ShowDriverView" id="uOR-0P-tQS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHf-Gc-y2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1029,7 +1029,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrW-G3-m01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3293.5999999999999" y="1817.5412293853076"/>
+            <point key="canvasLocation" x="3950" y="1115"/>
         </scene>
         <!--Driver View Controller-->
         <scene sceneID="oWQ-oG-QER">
@@ -1044,7 +1044,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeO-qf-NLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3295" y="1103"/>
+            <point key="canvasLocation" x="1470" y="2112"/>
         </scene>
         <!--订单-->
         <scene sceneID="xCK-In-aPj">
@@ -1242,6 +1242,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlA-ef-Nqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4296.8000000000002" y="-204.64767616191907"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yBb-nx-X4h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cs5-nA-GOj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nQJ-OM-EWr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oQt-pA-7M8" kind="relationship" relationship="rootViewController" id="WM2-Ys-F9m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkU-7M-WQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3217" y="1115"/>
         </scene>
     </scenes>
     <resources>
