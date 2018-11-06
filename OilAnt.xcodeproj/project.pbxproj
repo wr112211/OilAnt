@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A18000121913C9100D98728 /* IndentStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18000021913C9100D98728 /* IndentStateCell.swift */; };
+		1A18000521913F3B00D98728 /* MineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18000421913F3B00D98728 /* MineTableViewController.swift */; };
+		1A18FFFB21913B8B00D98728 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18FFFA21913B8B00D98728 /* MyPinAnnotation.swift */; };
+		1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */; };
+		1A58053B21913879008797E0 /* IndentMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58053A21913879008797E0 /* IndentMessageViewController.swift */; };
+		1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A2219131DE0015217A /* MainTableViewController.swift */; };
+		1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A4219133160015217A /* ResponseEntry.swift */; };
+		1A71F0A72191335C0015217A /* IndentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A62191335C0015217A /* IndentCell.swift */; };
+		1A71F0A9219134090015217A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A8219134090015217A /* LoginViewController.swift */; };
+		1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8190E21904C98005B98A3 /* AppDelegate.swift */; };
+		1AD8191121904C98005B98A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8191021904C98005B98A3 /* ViewController.swift */; };
+		1AD8191421904C98005B98A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8191221904C98005B98A3 /* Main.storyboard */; };
+		1AD8191621904CAF005B98A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8191521904CAF005B98A3 /* Assets.xcassets */; };
+		1AD8191921904CAF005B98A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8191721904CAF005B98A3 /* LaunchScreen.storyboard */; };
+		1AD8192421904CAF005B98A3 /* OilAntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8192321904CAF005B98A3 /* OilAntTests.swift */; };
+		1AD8192F21904CAF005B98A3 /* OilAntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8192E21904CAF005B98A3 /* OilAntUITests.swift */; };
+		1AFBEE062191517200B53E3B /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBEE052191517200B53E3B /* DriverTableViewController.swift */; };
+		5E9B4FBBDDF7CF3C764AA294 /* Pods_OilAntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6400505DB8B48C7228B8EF2 /* Pods_OilAntTests.framework */; };
+		CCAD7710D8E399E1936C728B /* Pods_OilAnt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9146AEBE2081C678C55F224 /* Pods_OilAnt.framework */; };
+		D582F78B383AFAACD9E1DD69 /* Pods_OilAntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6461BF60C284A3F7B2E4568E /* Pods_OilAntUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AD8192021904CAF005B98A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD8190321904C98005B98A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD8190A21904C98005B98A3;
+			remoteInfo = OilAnt;
+		};
+		1AD8192B21904CAF005B98A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD8190321904C98005B98A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD8190A21904C98005B98A3;
+			remoteInfo = OilAnt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F047E8F76798DE5374BF21 /* Pods-OilAntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OilAntUITests/Pods-OilAntUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A18000021913C9100D98728 /* IndentStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentStateCell.swift; sourceTree = "<group>"; };
+		1A18000421913F3B00D98728 /* MineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewController.swift; sourceTree = "<group>"; };
+		1A18FFFA21913B8B00D98728 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
+		1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTableViewController.swift; sourceTree = "<group>"; };
+		1A58053A21913879008797E0 /* IndentMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentMessageViewController.swift; sourceTree = "<group>"; };
+		1A71F0A2219131DE0015217A /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		1A71F0A4219133160015217A /* ResponseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntry.swift; sourceTree = "<group>"; };
+		1A71F0A62191335C0015217A /* IndentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentCell.swift; sourceTree = "<group>"; };
+		1A71F0A8219134090015217A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1AD8190B21904C98005B98A3 /* OilAnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilAnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD8190E21904C98005B98A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AD8191021904C98005B98A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AD8191321904C98005B98A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AD8191521904CAF005B98A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AD8191821904CAF005B98A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AD8191A21904CAF005B98A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD8191F21904CAF005B98A3 /* OilAntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilAntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD8192321904CAF005B98A3 /* OilAntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilAntTests.swift; sourceTree = "<group>"; };
+		1AD8192521904CAF005B98A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD8192A21904CAF005B98A3 /* OilAntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilAntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD8192E21904CAF005B98A3 /* OilAntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilAntUITests.swift; sourceTree = "<group>"; };
+		1AD8193021904CAF005B98A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OilAnt-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AFBEE052191517200B53E3B /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
+		249677DA3816872398AD5753 /* Pods-OilAntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OilAntTests/Pods-OilAntTests.release.xcconfig"; sourceTree = "<group>"; };
+		6461BF60C284A3F7B2E4568E /* Pods_OilAntUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OilAntUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6472EC999118CF091FD2B0D6 /* Pods-OilAntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OilAntTests/Pods-OilAntTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75171858C1729EDB0DCE37E6 /* Pods-OilAnt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAnt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB09A2C9543E6BBCE9B3A11 /* Pods-OilAntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OilAntUITests/Pods-OilAntUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F24575A32D5C29FAA83C45A9 /* Pods-OilAnt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OilAnt.release.xcconfig"; path = "Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt.release.xcconfig"; sourceTree = "<group>"; };
+		F6400505DB8B48C7228B8EF2 /* Pods_OilAntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OilAntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9146AEBE2081C678C55F224 /* Pods_OilAnt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OilAnt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD8190821904C98005B98A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAD7710D8E399E1936C728B /* Pods_OilAnt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8191C21904CAF005B98A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B4FBBDDF7CF3C764AA294 /* Pods_OilAntTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8192721904CAF005B98A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D582F78B383AFAACD9E1DD69 /* Pods_OilAntUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A8A43850FF5BC84BF0AB09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75171858C1729EDB0DCE37E6 /* Pods-OilAnt.debug.xcconfig */,
+				F24575A32D5C29FAA83C45A9 /* Pods-OilAnt.release.xcconfig */,
+				6472EC999118CF091FD2B0D6 /* Pods-OilAntTests.debug.xcconfig */,
+				249677DA3816872398AD5753 /* Pods-OilAntTests.release.xcconfig */,
+				ACB09A2C9543E6BBCE9B3A11 /* Pods-OilAntUITests.debug.xcconfig */,
+				16F047E8F76798DE5374BF21 /* Pods-OilAntUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1AD8190221904C98005B98A3 = {
+			isa = PBXGroup;
+			children = (
+				1AD8190D21904C98005B98A3 /* OilAnt */,
+				1AD8192221904CAF005B98A3 /* OilAntTests */,
+				1AD8192D21904CAF005B98A3 /* OilAntUITests */,
+				1AD8190C21904C98005B98A3 /* Products */,
+				12A8A43850FF5BC84BF0AB09 /* Pods */,
+				62F41D359E042D6030FAB091 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AD8190C21904C98005B98A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8190B21904C98005B98A3 /* OilAnt.app */,
+				1AD8191F21904CAF005B98A3 /* OilAntTests.xctest */,
+				1AD8192A21904CAF005B98A3 /* OilAntUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AD8190D21904C98005B98A3 /* OilAnt */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8190E21904C98005B98A3 /* AppDelegate.swift */,
+				1AD8191021904C98005B98A3 /* ViewController.swift */,
+				1AD8191221904C98005B98A3 /* Main.storyboard */,
+				1AD8191521904CAF005B98A3 /* Assets.xcassets */,
+				1AD8191721904CAF005B98A3 /* LaunchScreen.storyboard */,
+				1AD8191A21904CAF005B98A3 /* Info.plist */,
+				1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */,
+				1A71F0A2219131DE0015217A /* MainTableViewController.swift */,
+				1A71F0A4219133160015217A /* ResponseEntry.swift */,
+				1A71F0A62191335C0015217A /* IndentCell.swift */,
+				1A71F0A8219134090015217A /* LoginViewController.swift */,
+				1A58053A21913879008797E0 /* IndentMessageViewController.swift */,
+				1A18FFFA21913B8B00D98728 /* MyPinAnnotation.swift */,
+				1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */,
+				1A18000021913C9100D98728 /* IndentStateCell.swift */,
+				1A18000421913F3B00D98728 /* MineTableViewController.swift */,
+				1AFBEE052191517200B53E3B /* DriverTableViewController.swift */,
+			);
+			path = OilAnt;
+			sourceTree = "<group>";
+		};
+		1AD8192221904CAF005B98A3 /* OilAntTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8192321904CAF005B98A3 /* OilAntTests.swift */,
+				1AD8192521904CAF005B98A3 /* Info.plist */,
+			);
+			path = OilAntTests;
+			sourceTree = "<group>";
+		};
+		1AD8192D21904CAF005B98A3 /* OilAntUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8192E21904CAF005B98A3 /* OilAntUITests.swift */,
+				1AD8193021904CAF005B98A3 /* Info.plist */,
+			);
+			path = OilAntUITests;
+			sourceTree = "<group>";
+		};
+		62F41D359E042D6030FAB091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9146AEBE2081C678C55F224 /* Pods_OilAnt.framework */,
+				F6400505DB8B48C7228B8EF2 /* Pods_OilAntTests.framework */,
+				6461BF60C284A3F7B2E4568E /* Pods_OilAntUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AD8190A21904C98005B98A3 /* OilAnt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD8193321904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAnt" */;
+			buildPhases = (
+				FA130FD09F4A236DB1218408 /* [CP] Check Pods Manifest.lock */,
+				1AD8190721904C98005B98A3 /* Sources */,
+				1AD8190821904C98005B98A3 /* Frameworks */,
+				1AD8190921904C98005B98A3 /* Resources */,
+				AA0721857A0A09801383FEBC /* [CP] Embed Pods Frameworks */,
+				2558AE3840123555D1C906A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OilAnt;
+			productName = OilAnt;
+			productReference = 1AD8190B21904C98005B98A3 /* OilAnt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AD8191E21904CAF005B98A3 /* OilAntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD8193621904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAntTests" */;
+			buildPhases = (
+				81F563F4978546B5A7E5D9FD /* [CP] Check Pods Manifest.lock */,
+				1AD8191B21904CAF005B98A3 /* Sources */,
+				1AD8191C21904CAF005B98A3 /* Frameworks */,
+				1AD8191D21904CAF005B98A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD8192121904CAF005B98A3 /* PBXTargetDependency */,
+			);
+			name = OilAntTests;
+			productName = OilAntTests;
+			productReference = 1AD8191F21904CAF005B98A3 /* OilAntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AD8192921904CAF005B98A3 /* OilAntUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD8193921904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAntUITests" */;
+			buildPhases = (
+				5EC697662AC355BB210D326D /* [CP] Check Pods Manifest.lock */,
+				1AD8192621904CAF005B98A3 /* Sources */,
+				1AD8192721904CAF005B98A3 /* Frameworks */,
+				1AD8192821904CAF005B98A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD8192C21904CAF005B98A3 /* PBXTargetDependency */,
+			);
+			name = OilAntUITests;
+			productName = OilAntUITests;
+			productReference = 1AD8192A21904CAF005B98A3 /* OilAntUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AD8190321904C98005B98A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "王瑞";
+				TargetAttributes = {
+					1AD8190A21904C98005B98A3 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					1AD8191E21904CAF005B98A3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1AD8190A21904C98005B98A3;
+					};
+					1AD8192921904CAF005B98A3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1AD8190A21904C98005B98A3;
+					};
+				};
+			};
+			buildConfigurationList = 1AD8190621904C98005B98A3 /* Build configuration list for PBXProject "OilAnt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AD8190221904C98005B98A3;
+			productRefGroup = 1AD8190C21904C98005B98A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AD8190A21904C98005B98A3 /* OilAnt */,
+				1AD8191E21904CAF005B98A3 /* OilAntTests */,
+				1AD8192921904CAF005B98A3 /* OilAntUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AD8190921904C98005B98A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD8191921904CAF005B98A3 /* LaunchScreen.storyboard in Resources */,
+				1AD8191621904CAF005B98A3 /* Assets.xcassets in Resources */,
+				1AD8191421904C98005B98A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8191D21904CAF005B98A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8192821904CAF005B98A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2558AE3840123555D1C906A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EC697662AC355BB210D326D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OilAntUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F563F4978546B5A7E5D9FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OilAntTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0721857A0A09801383FEBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OilAnt/Pods-OilAnt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA130FD09F4A236DB1218408 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OilAnt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AD8190721904C98005B98A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A18FFFB21913B8B00D98728 /* MyPinAnnotation.swift in Sources */,
+				1A58053B21913879008797E0 /* IndentMessageViewController.swift in Sources */,
+				1A18000521913F3B00D98728 /* MineTableViewController.swift in Sources */,
+				1A71F0A9219134090015217A /* LoginViewController.swift in Sources */,
+				1AD8191121904C98005B98A3 /* ViewController.swift in Sources */,
+				1AFBEE062191517200B53E3B /* DriverTableViewController.swift in Sources */,
+				1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */,
+				1A71F0A72191335C0015217A /* IndentCell.swift in Sources */,
+				1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */,
+				1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */,
+				1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */,
+				1A18000121913C9100D98728 /* IndentStateCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8191B21904CAF005B98A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD8192421904CAF005B98A3 /* OilAntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD8192621904CAF005B98A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD8192F21904CAF005B98A3 /* OilAntUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AD8192121904CAF005B98A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD8190A21904C98005B98A3 /* OilAnt */;
+			targetProxy = 1AD8192021904CAF005B98A3 /* PBXContainerItemProxy */;
+		};
+		1AD8192C21904CAF005B98A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD8190A21904C98005B98A3 /* OilAnt */;
+			targetProxy = 1AD8192B21904CAF005B98A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AD8191221904C98005B98A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD8191321904C98005B98A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AD8191721904CAF005B98A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD8191821904CAF005B98A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AD8193121904CAF005B98A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AD8193221904CAF005B98A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AD8193421904CAF005B98A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75171858C1729EDB0DCE37E6 /* Pods-OilAnt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAnt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OilAnt/OilAnt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AD8193521904CAF005B98A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F24575A32D5C29FAA83C45A9 /* Pods-OilAnt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAnt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OilAnt/OilAnt-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AD8193721904CAF005B98A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6472EC999118CF091FD2B0D6 /* Pods-OilAntTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant.OilAntTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilAnt.app/OilAnt";
+			};
+			name = Debug;
+		};
+		1AD8193821904CAF005B98A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249677DA3816872398AD5753 /* Pods-OilAntTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant.OilAntTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilAnt.app/OilAnt";
+			};
+			name = Release;
+		};
+		1AD8193A21904CAF005B98A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB09A2C9543E6BBCE9B3A11 /* Pods-OilAntUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAntUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant.OilAntUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OilAnt;
+			};
+			name = Debug;
+		};
+		1AD8193B21904CAF005B98A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F047E8F76798DE5374BF21 /* Pods-OilAntUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYR8WY3PC;
+				INFOPLIST_FILE = OilAntUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plansolve.oilant.OilAntUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OilAnt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AD8190621904C98005B98A3 /* Build configuration list for PBXProject "OilAnt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD8193121904CAF005B98A3 /* Debug */,
+				1AD8193221904CAF005B98A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD8193321904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAnt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD8193421904CAF005B98A3 /* Debug */,
+				1AD8193521904CAF005B98A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD8193621904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD8193721904CAF005B98A3 /* Debug */,
+				1AD8193821904CAF005B98A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD8193921904CAF005B98A3 /* Build configuration list for PBXNativeTarget "OilAntUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD8193A21904CAF005B98A3 /* Debug */,
+				1AD8193B21904CAF005B98A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AD8190321904C98005B98A3 /* Project object */;
+}
