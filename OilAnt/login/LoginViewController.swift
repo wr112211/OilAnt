@@ -54,11 +54,11 @@ class LoginViewController: UIViewController {
                     
                 }
             }
-            //实例化一个将要跳转的viewController
-            let mainView = MainTableViewController()
-            //跳转
-            self.present(mainView , animated: true, completion: nil)
-            
+//            //实例化一个将要跳转的viewController
+//            let mainView = MainTableViewController()
+//            //跳转
+//            self.present(mainView , animated: true, completion: nil)
+             self.performSegue(withIdentifier: "ShowMainView", sender: "aaa")
             
             //            }
         })
@@ -93,6 +93,7 @@ class LoginViewController: UIViewController {
                           failure: @escaping failureHandler) -> DataRequest {
         return request(url: url, method: .get, parameters: parameters, encoding: encoding, headers: headers, success: success, failure: failure)
     }
+    
     /// PUT请求
     class func requestPUT(_ url: String,
                           _ parameters: Parameters? = nil,
@@ -102,6 +103,7 @@ class LoginViewController: UIViewController {
                           failure: @escaping failureHandler) -> DataRequest {
         return request(url: url, method: .put, parameters: parameters, encoding: encoding, headers: headers, success: success, failure: failure)
     }
+    
     /* 发送请求
      @param     url         请求的链接
      @param     method      请求的类型
@@ -153,6 +155,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.navigationItem.title = "登陆"
+        
         // Do any additional setup after loading the view.
         //        textField.clearButtonMode = .whileEditing  //编辑时出现清除按钮
         //        textField.clearButtonMode = .unlessEditing  //编辑时不出现，编辑后才出现清除按钮
@@ -193,7 +199,6 @@ class LoginViewController: UIViewController {
     }
     
     
-    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -201,7 +206,7 @@ class LoginViewController: UIViewController {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
-     */
+   
 
 
 }

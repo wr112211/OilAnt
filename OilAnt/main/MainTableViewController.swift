@@ -21,6 +21,8 @@ class MainTableViewController: UITableViewController {
     
     let userDefault = UserDefaults.standard
 
+    var headerView: UIView!
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return indentList.count
     }
@@ -74,39 +76,38 @@ class MainTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         self.navigationItem.title = "主页"
+//        self.tabBarItem.tintCol
         
-        print("tableView===  \(tableView)")
         print(self)
         
-        let params = [
-            "mobile": "18211005247",
-            "password" : "123456"
-        ]
+//        headerView = tableView.tableHeaderView!
+//        tableView.tableHeaderView = nil
+//        
+//        tableView.contentInset = UIEdgeInsets(top: 300, left: 0, bottom: 0, right: 0)
         
-        // 4.请求头
-        let headers: HTTPHeaders = [
-            "Accept": "application/json"
-        ]
-        LoginViewController.requestPOST(SERVICE_URL+LOGIN,params, headers: headers, success: { (result) in
-            
-            print("result===  \(result)")
-            let cstorage = HTTPCookieStorage.shared
-            if let cookies = cstorage.cookies {
-                //                for cookie:HTTPCookie in cookies {
-                //                    //                    print("name：\(cookie.name)", "value：\(cookie.value)")
-                //
-                ////                    let userDefault = UserDefaults.standard
-                //
-                //                    self.userDefault.set("\(cookie.name)=\(cookie.value)", forKey: "session")
-                //
-                //                }
-                self.requestList()
-            }
-        })
-        { (error) in
-            
-        }
-        //        self.requestList()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseId")
+        tableView.backgroundColor = .lightGray
+        
+        let customView = Bundle.main.loadNibNamed("\(MainTabHeaderView.self)", owner: nil, options: nil)!.first as! MainTabHeaderView
+//        customView.label.text = "This red view is tableHeaderView set programmatically. Try rotating the device, finally the Autolayout works!"
+//        customView.imageView.image = #imageLiteral(resourceName: "headerview.png")
+        customView.layer.borderColor = UIColor.blue.cgColor
+        customView.layer.borderWidth = 2
+        
+//        // 1. Set table header view programmatically
+//        tableView.setTableHeaderView(headerView: customView)
+//
+//        // 2. Set initial frame
+//        tableView.updateHeaderViewFrame()
+        
+        tableView.addSubview(customView)
+        
+        self.requestList()
     }
     
     func requestList(){

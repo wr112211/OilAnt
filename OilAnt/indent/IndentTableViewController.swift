@@ -25,39 +25,13 @@ class IndentTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+//
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
-        
+//
         self.navigationItem.title = "我的订单"
+
+        self.requestList()
         
-        let params = [
-            "mobile": "18211005247",
-            "password" : "123456"
-        ]
-        
-        // 4.请求头
-        let headers: HTTPHeaders = [
-            "Accept": "application/json"
-        ]
-        LoginViewController.requestPOST(SERVICE_URL+LOGIN,params, headers: headers, success: { (result) in
-            
-            print("result===  \(result)")
-            let cstorage = HTTPCookieStorage.shared
-            if let cookies = cstorage.cookies {
-                //                for cookie:HTTPCookie in cookies {
-                //                    //                    print("name：\(cookie.name)", "value：\(cookie.value)")
-                //
-                ////                    let userDefault = UserDefaults.standard
-                //
-                //                    self.userDefault.set("\(cookie.name)=\(cookie.value)", forKey: "session")
-                //
-                //                }
-                self.requestList()
-            }
-        })
-        { (error) in
-            
-        }
     }
     func requestList(){
         
