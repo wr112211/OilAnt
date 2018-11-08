@@ -16,7 +16,6 @@ class IndentTableViewController: UITableViewController {
     private var indentList = [IndentEntry]()
     
     let userDefault = UserDefaults.standard
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,13 +25,11 @@ class IndentTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 //
-        self.navigationController?.navigationBar.barTintColor = UIColor.orange
-//
-        self.navigationItem.title = "我的订单"
-
+    
         self.requestList()
         
     }
+   
     func requestList(){
         
         // 3. 参数、编码
@@ -342,4 +339,6 @@ class IndentTableViewController: UITableViewController {
     //
     //     }
     //  }
+    
 }
+

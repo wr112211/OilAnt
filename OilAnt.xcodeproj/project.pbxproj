@@ -13,11 +13,24 @@
 		1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */; };
 		1A4754CD2192A5D300A7F892 /* MainTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754CB2192A5D300A7F892 /* MainTabHeaderView.swift */; };
 		1A4754CE2192A5D300A7F892 /* MainTabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4754CC2192A5D300A7F892 /* MainTabHeaderView.xib */; };
+		1A4754D92192D6D000A7F892 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A4754D72192D6CF00A7F892 /* cities.plist */; };
+		1A4754DA2192D6D000A7F892 /* hotCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A4754D82192D6D000A7F892 /* hotCities.plist */; };
+		1A4754DC2192D6E700A7F892 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754DB2192D6E700A7F892 /* Header.swift */; };
+		1A4754E12192D71E00A7F892 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754DF2192D71D00A7F892 /* UIColor+Hex.swift */; };
+		1A4754E22192D71E00A7F892 /* String+SoolyCitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754E02192D71D00A7F892 /* String+SoolyCitySelector.swift */; };
+		1A4754E72192D74F00A7F892 /* RecentCitiesableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754E42192D74E00A7F892 /* RecentCitiesableViewCell.swift */; };
+		1A4754E82192D74F00A7F892 /* CurrentCityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754E52192D74F00A7F892 /* CurrentCityTableViewCell.swift */; };
+		1A4754E92192D74F00A7F892 /* HotCityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754E62192D74F00A7F892 /* HotCityTableViewCell.swift */; };
+		1A4754ED2192D78300A7F892 /* CitySelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754EB2192D78300A7F892 /* CitySelectorViewController.swift */; };
+		1A4754EE2192D78300A7F892 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4754EC2192D78300A7F892 /* ResultTableViewController.swift */; };
 		1A58053B21913879008797E0 /* IndentMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58053A21913879008797E0 /* IndentMessageViewController.swift */; };
 		1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A2219131DE0015217A /* MainTableViewController.swift */; };
 		1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A4219133160015217A /* ResponseEntry.swift */; };
 		1A71F0A72191335C0015217A /* IndentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A62191335C0015217A /* IndentCell.swift */; };
 		1A71F0A9219134090015217A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A8219134090015217A /* LoginViewController.swift */; };
+		1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699112193D1AD005404B5 /* IndentTabController.swift */; };
+		1A9699192193D1FA005404B5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699172193D1FA005404B5 /* PageContentView.swift */; };
+		1A96991A2193D1FA005404B5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699182193D1FA005404B5 /* PageTitleView.swift */; };
 		1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8190E21904C98005B98A3 /* AppDelegate.swift */; };
 		1AD8191121904C98005B98A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8191021904C98005B98A3 /* ViewController.swift */; };
 		1AD8191421904C98005B98A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8191221904C98005B98A3 /* Main.storyboard */; };
@@ -57,11 +70,24 @@
 		1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTableViewController.swift; sourceTree = "<group>"; };
 		1A4754CB2192A5D300A7F892 /* MainTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabHeaderView.swift; sourceTree = "<group>"; };
 		1A4754CC2192A5D300A7F892 /* MainTabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabHeaderView.xib; sourceTree = "<group>"; };
+		1A4754D72192D6CF00A7F892 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		1A4754D82192D6D000A7F892 /* hotCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotCities.plist; sourceTree = "<group>"; };
+		1A4754DB2192D6E700A7F892 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		1A4754DF2192D71D00A7F892 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		1A4754E02192D71D00A7F892 /* String+SoolyCitySelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SoolyCitySelector.swift"; sourceTree = "<group>"; };
+		1A4754E42192D74E00A7F892 /* RecentCitiesableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentCitiesableViewCell.swift; sourceTree = "<group>"; };
+		1A4754E52192D74F00A7F892 /* CurrentCityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentCityTableViewCell.swift; sourceTree = "<group>"; };
+		1A4754E62192D74F00A7F892 /* HotCityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotCityTableViewCell.swift; sourceTree = "<group>"; };
+		1A4754EB2192D78300A7F892 /* CitySelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySelectorViewController.swift; sourceTree = "<group>"; };
+		1A4754EC2192D78300A7F892 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		1A58053A21913879008797E0 /* IndentMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentMessageViewController.swift; sourceTree = "<group>"; };
 		1A71F0A2219131DE0015217A /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		1A71F0A4219133160015217A /* ResponseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntry.swift; sourceTree = "<group>"; };
 		1A71F0A62191335C0015217A /* IndentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentCell.swift; sourceTree = "<group>"; };
 		1A71F0A8219134090015217A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A9699112193D1AD005404B5 /* IndentTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTabController.swift; sourceTree = "<group>"; };
+		1A9699172193D1FA005404B5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		1A9699182193D1FA005404B5 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		1AD8190B21904C98005B98A3 /* OilAnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilAnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD8190E21904C98005B98A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD8191021904C98005B98A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +191,7 @@
 				1A58053A21913879008797E0 /* IndentMessageViewController.swift */,
 				1A18FFFE21913C1D00D98728 /* IndentTableViewController.swift */,
 				1A18000021913C9100D98728 /* IndentStateCell.swift */,
+				1A9699112193D1AD005404B5 /* IndentTabController.swift */,
 			);
 			path = indent;
 			sourceTree = "<group>";
@@ -175,6 +202,55 @@
 				1A71F0A8219134090015217A /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		1A4754D62192D68600A7F892 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1A4754DB2192D6E700A7F892 /* Header.swift */,
+				1AD8191521904CAF005B98A3 /* Assets.xcassets */,
+				1A4754D72192D6CF00A7F892 /* cities.plist */,
+				1A4754D82192D6D000A7F892 /* hotCities.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A4754E32192D72400A7F892 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A4754E02192D71D00A7F892 /* String+SoolyCitySelector.swift */,
+				1A4754DF2192D71D00A7F892 /* UIColor+Hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1A4754EA2192D75300A7F892 /* CitySelectors */ = {
+			isa = PBXGroup;
+			children = (
+				1A4754EB2192D78300A7F892 /* CitySelectorViewController.swift */,
+				1A4754EC2192D78300A7F892 /* ResultTableViewController.swift */,
+				1A4754E52192D74F00A7F892 /* CurrentCityTableViewCell.swift */,
+				1A4754E62192D74F00A7F892 /* HotCityTableViewCell.swift */,
+				1A4754E42192D74E00A7F892 /* RecentCitiesableViewCell.swift */,
+			);
+			path = CitySelectors;
+			sourceTree = "<group>";
+		};
+		1A9699152193D1FA005404B5 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				1A9699162193D1FA005404B5 /* Controller */,
+				1A9699172193D1FA005404B5 /* PageContentView.swift */,
+				1A9699182193D1FA005404B5 /* PageTitleView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		1A9699162193D1FA005404B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		1AD8190221904C98005B98A3 = {
@@ -202,6 +278,12 @@
 		1AD8190D21904C98005B98A3 /* OilAnt */ = {
 			isa = PBXGroup;
 			children = (
+				1A9699152193D1FA005404B5 /* PageView */,
+				1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */,
+				1AD8191A21904CAF005B98A3 /* Info.plist */,
+				1A4754EA2192D75300A7F892 /* CitySelectors */,
+				1A4754E32192D72400A7F892 /* Extension */,
+				1A4754D62192D68600A7F892 /* Resource */,
 				1A4754D32192A8CF00A7F892 /* login */,
 				1A4754D22192A8B300A7F892 /* indent */,
 				1A4754D12192A89C00A7F892 /* mine */,
@@ -210,10 +292,7 @@
 				1AD8190E21904C98005B98A3 /* AppDelegate.swift */,
 				1AD8191021904C98005B98A3 /* ViewController.swift */,
 				1AD8191221904C98005B98A3 /* Main.storyboard */,
-				1AD8191521904CAF005B98A3 /* Assets.xcassets */,
 				1AD8191721904CAF005B98A3 /* LaunchScreen.storyboard */,
-				1AD8191A21904CAF005B98A3 /* Info.plist */,
-				1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */,
 			);
 			path = OilAnt;
 			sourceTree = "<group>";
@@ -357,8 +436,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD8191921904CAF005B98A3 /* LaunchScreen.storyboard in Resources */,
+				1A4754DA2192D6D000A7F892 /* hotCities.plist in Resources */,
 				1AD8191621904CAF005B98A3 /* Assets.xcassets in Resources */,
 				1A4754CE2192A5D300A7F892 /* MainTabHeaderView.xib in Resources */,
+				1A4754D92192D6D000A7F892 /* cities.plist in Resources */,
 				1AD8191421904C98005B98A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,19 +588,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4754E72192D74F00A7F892 /* RecentCitiesableViewCell.swift in Sources */,
 				1A18FFFB21913B8B00D98728 /* MyPinAnnotation.swift in Sources */,
 				1A58053B21913879008797E0 /* IndentMessageViewController.swift in Sources */,
 				1A18000521913F3B00D98728 /* MineTableViewController.swift in Sources */,
 				1A71F0A9219134090015217A /* LoginViewController.swift in Sources */,
 				1AD8191121904C98005B98A3 /* ViewController.swift in Sources */,
 				1AFBEE062191517200B53E3B /* DriverTableViewController.swift in Sources */,
+				1A96991A2193D1FA005404B5 /* PageTitleView.swift in Sources */,
 				1A4754CD2192A5D300A7F892 /* MainTabHeaderView.swift in Sources */,
 				1AE24F7D2191938900EA6BCB /* DriverViewController.swift in Sources */,
+				1A4754ED2192D78300A7F892 /* CitySelectorViewController.swift in Sources */,
 				1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */,
+				1A4754E12192D71E00A7F892 /* UIColor+Hex.swift in Sources */,
+				1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */,
 				1A71F0A72191335C0015217A /* IndentCell.swift in Sources */,
+				1A4754E22192D71E00A7F892 /* String+SoolyCitySelector.swift in Sources */,
+				1A4754DC2192D6E700A7F892 /* Header.swift in Sources */,
 				1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */,
 				1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */,
+				1A4754E92192D74F00A7F892 /* HotCityTableViewCell.swift in Sources */,
+				1A9699192193D1FA005404B5 /* PageContentView.swift in Sources */,
+				1A4754E82192D74F00A7F892 /* CurrentCityTableViewCell.swift in Sources */,
 				1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */,
+				1A4754EE2192D78300A7F892 /* ResultTableViewController.swift in Sources */,
 				1A18000121913C9100D98728 /* IndentStateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

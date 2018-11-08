@@ -35,7 +35,7 @@ class MineTableViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         
         self.navigationItem.title = "个人中心"
-        
+   
         
         authenView.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self,  action: #selector(MineTableViewController.singleTap))

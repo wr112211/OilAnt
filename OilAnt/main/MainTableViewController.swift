@@ -26,6 +26,73 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return indentList.count
     }
+   
+    lazy var customView:UIView = Bundle.main.loadNibNamed("\(MainTabHeaderView.self)", owner: nil, options: nil)!.first as! MainTabHeaderView
+   
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return customView.frame.size.height
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let beginLocation =  (customView as! MainTabHeaderView).beginLocation
+        beginLocation? .isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self,  action: #selector(MainTableViewController.picTap))
+        beginLocation?.addGestureRecognizer(tapGesture)
+        
+        let endLocation =  (customView as! MainTabHeaderView).endLocation
+        endLocation? .isUserInteractionEnabled = true
+        let tapGesture2 = UITapGestureRecognizer(target: self,  action: #selector(MainTableViewController.picTap2))
+        endLocation?.addGestureRecognizer(tapGesture2)
+        
+        let filterLable =  (customView as! MainTabHeaderView).filterLable
+        filterLable? .isUserInteractionEnabled = true
+        let tapGesture3 = UITapGestureRecognizer(target: self,  action: #selector(MainTableViewController.picTap3))
+        filterLable?.addGestureRecognizer(tapGesture3)
+        
+        let searchBtn =  (customView as! MainTabHeaderView).searchBtn
+        searchBtn? .isUserInteractionEnabled = true
+        let tapGesture4 = UITapGestureRecognizer(target: self,  action: #selector(MainTableViewController.picTap4))
+        searchBtn?.addGestureRecognizer(tapGesture4)
+        
+        let searchKey =  (customView as! MainTabHeaderView).searchKey
+        searchKey?.placeholder="请输入关键字"
+        
+        return customView
+    }
+    
+    @objc func picTap()
+    {
+        print("beginLocation")
+        //实例化一个将要跳转的viewController
+        let mainView = CitySelectorViewController()
+        //跳转
+        self.present(mainView , animated: true, completion: nil)
+    }
+    
+    @objc func picTap2()
+    {
+        print("endLocation")
+        //实例化一个将要跳转的viewController
+        let mainView = CitySelectorViewController()
+        //跳转
+        self.present(mainView , animated: true, completion: nil)
+    }
+    
+    @objc func picTap3()
+    {
+        print("filterLable")
+    }
+    
+    @objc func picTap4()
+    {
+        print("searchBtn")
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let id = String(describing: IndentCell.self)
@@ -76,37 +143,9 @@ class MainTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         self.navigationItem.title = "主页"
-//        self.tabBarItem.tintCol
         
         print(self)
-        
-//        headerView = tableView.tableHeaderView!
-//        tableView.tableHeaderView = nil
-//        
-//        tableView.contentInset = UIEdgeInsets(top: 300, left: 0, bottom: 0, right: 0)
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.estimatedRowHeight = 44
-        tableView.rowHeight = UITableView.automaticDimension
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseId")
-        tableView.backgroundColor = .lightGray
-        
-        let customView = Bundle.main.loadNibNamed("\(MainTabHeaderView.self)", owner: nil, options: nil)!.first as! MainTabHeaderView
-//        customView.label.text = "This red view is tableHeaderView set programmatically. Try rotating the device, finally the Autolayout works!"
-//        customView.imageView.image = #imageLiteral(resourceName: "headerview.png")
-        customView.layer.borderColor = UIColor.blue.cgColor
-        customView.layer.borderWidth = 2
-        
-//        // 1. Set table header view programmatically
-//        tableView.setTableHeaderView(headerView: customView)
-//
-//        // 2. Set initial frame
-//        tableView.updateHeaderViewFrame()
-        
-        tableView.addSubview(customView)
-        
+     
         self.requestList()
     }
     
@@ -178,14 +217,14 @@ class MainTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let row = tableView.indexPathForSelectedRow!.row
-        let destination = segue.destination as! UINavigationController
+        if segue.identifier == "ShowMapView"{
+            let row = tableView.indexPathForSelectedRow!.row
+            let destination = segue.destination as! UINavigationController
 //        let controller = (destination.viewControllers.first as! IndentMessageViewController)
 //
 //        controller.idStr = (sender as? String)!
-//        if segue.identifier == "ShowMapView"{
             let controller = (destination.viewControllers.first as! IndentMessageViewController)
             controller.idStr = "mainview \(row)"
-//        }
+        }
     }
 }

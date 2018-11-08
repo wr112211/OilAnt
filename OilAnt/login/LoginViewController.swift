@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
                     
                 }
             }
-//            //实例化一个将要跳转的viewController
+            //实例化一个将要跳转的viewController
 //            let mainView = MainTableViewController()
 //            //跳转
 //            self.present(mainView , animated: true, completion: nil)
