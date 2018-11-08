@@ -1448,7 +1448,7 @@
         <scene sceneID="vW0-2H-9Oa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lhy-zR-JvI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="订单" image="icon_progress" id="eBl-PD-1P3">
+                    <tabBarItem key="tabBarItem" title="订单" image="icon_progress" selectedImage="icon_progress_selection" id="eBl-PD-1P3">
                         <color key="badgeColor" name="theme"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1472,6 +1472,7 @@
         <image name="icon_main" width="22" height="22"/>
         <image name="icon_main_selection" width="22" height="22"/>
         <image name="icon_progress" width="22" height="22"/>
+        <image name="icon_progress_selection" width="22" height="22"/>
         <image name="icon_question" width="22" height="22"/>
         <image name="icon_question_selection" width="22" height="22"/>
         <namedColor name="theme">
