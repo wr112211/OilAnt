@@ -54,13 +54,25 @@ class LoginViewController: UIViewController {
                     
                 }
             }
+            
+            self.dismiss(animated: true, completion: nil)
             //实例化一个将要跳转的viewController
 //            let mainView = MainTableViewController()
 //            //跳转
 //            self.present(mainView , animated: true, completion: nil)
-             self.performSegue(withIdentifier: "ShowMainView", sender: "aaa")
             
+//             self.performSegue(withIdentifier: "ShowMainView", sender: "aaa")
+            
+            
+//            self.navigationController?.show(vc, sender: nil)
+//            self.navigationController?.performSegue(withIdentifier: "ShowMainView", sender: "aaa")
             //            }
+            
+            
+//            let mainTabBarVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainTabbar")
+//            mainTabBarVC.navigationItem.title = "首页"
+//            mainTabBarVC.navigationItem.setHidesBackButton(true, animated: true)
+//            self.navigationController?.show(mainTabBarVC, sender: nil)
         })
         { (error) in
             
@@ -150,7 +162,6 @@ class LoginViewController: UIViewController {
     @objc func headerRefresh(){
         
         print("下拉刷新")
-        
     }
     
     override func viewDidLoad() {
@@ -159,6 +170,7 @@ class LoginViewController: UIViewController {
         
         self.navigationItem.title = "登陆"
         
+        print("====login====")
         // Do any additional setup after loading the view.
         //        textField.clearButtonMode = .whileEditing  //编辑时出现清除按钮
         //        textField.clearButtonMode = .unlessEditing  //编辑时不出现，编辑后才出现清除按钮

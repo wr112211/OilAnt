@@ -144,9 +144,20 @@ class MainTableViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         self.navigationItem.title = "主页"
         
+        self.navigationItem.setHidesBackButton(true, animated: true)
         print(self)
      
-        self.requestList()
+        
+//        let objectValue:Any? = self.userDefault.object(forKey: "session")
+//        if (objectValue == nil){
+        
+             let loginview =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView")
+             self.present(loginview , animated: true, completion: nil)
+        
+//        } else {
+//
+//            self.requestList()
+//        }
     }
     
     func requestList(){
