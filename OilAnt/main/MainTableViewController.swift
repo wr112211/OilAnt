@@ -15,7 +15,12 @@ let SERVICE_URL = "http://testoil.plan-solve.com";
 let advancedSearch = "/carry/combinedQuery";//首页筛选
 
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, DelegatePush {
+    
+    func method() {
+        self.requestList()
+    }
+    
 
     private var indentList = [IndentEntry]()
     
@@ -152,6 +157,10 @@ class MainTableViewController: UITableViewController {
 //        if (objectValue == nil){
         
              let loginview =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView")
+        
+             var login = loginview.children.first as! LoginViewController
+             login.delegate = self
+        
              self.present(loginview , animated: true, completion: nil)
         
 //        } else {

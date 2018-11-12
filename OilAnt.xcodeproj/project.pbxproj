@@ -28,6 +28,7 @@
 		1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A4219133160015217A /* ResponseEntry.swift */; };
 		1A71F0A72191335C0015217A /* IndentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A62191335C0015217A /* IndentCell.swift */; };
 		1A71F0A9219134090015217A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A8219134090015217A /* LoginViewController.swift */; };
+		1A95A7CA21991BA7007365A2 /* DelegatePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95A7C921991BA7007365A2 /* DelegatePush.swift */; };
 		1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699112193D1AD005404B5 /* IndentTabController.swift */; };
 		1A9699192193D1FA005404B5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699172193D1FA005404B5 /* PageContentView.swift */; };
 		1A96991A2193D1FA005404B5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699182193D1FA005404B5 /* PageTitleView.swift */; };
@@ -85,6 +86,7 @@
 		1A71F0A4219133160015217A /* ResponseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntry.swift; sourceTree = "<group>"; };
 		1A71F0A62191335C0015217A /* IndentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentCell.swift; sourceTree = "<group>"; };
 		1A71F0A8219134090015217A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A95A7C921991BA7007365A2 /* DelegatePush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePush.swift; sourceTree = "<group>"; };
 		1A9699112193D1AD005404B5 /* IndentTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTabController.swift; sourceTree = "<group>"; };
 		1A9699172193D1FA005404B5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		1A9699182193D1FA005404B5 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				1A71F0A4219133160015217A /* ResponseEntry.swift */,
 				1A18FFFA21913B8B00D98728 /* MyPinAnnotation.swift */,
+				1A95A7C921991BA7007365A2 /* DelegatePush.swift */,
 			);
 			path = support;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */,
 				1A71F0A72191335C0015217A /* IndentCell.swift in Sources */,
 				1A4754E22192D71E00A7F892 /* String+SoolyCitySelector.swift in Sources */,
+				1A95A7CA21991BA7007365A2 /* DelegatePush.swift in Sources */,
 				1A4754DC2192D6E700A7F892 /* Header.swift in Sources */,
 				1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */,
 				1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */,

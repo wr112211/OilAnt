@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     let userDefault = UserDefaults.standard
     
+    weak var delegate:DelegatePush?
+  
     @IBAction func LoginBtn(_ sender: Any) {
         //        print(userMobile.text!)
         //        print(userPass.text!)
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController {
                     
                 }
             }
-            
+            self.delegate?.method()
             self.dismiss(animated: true, completion: nil)
             //实例化一个将要跳转的viewController
 //            let mainView = MainTableViewController()
