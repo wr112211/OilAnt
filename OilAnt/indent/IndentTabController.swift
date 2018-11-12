@@ -34,15 +34,29 @@ class IndentTabController: UIViewController,PageTitleViewDelegate,PageContentVie
         //添加子控制器,和标题的相同次数,这里我直接循环添加了进行演示,控制器的view内容,直接用随机颜色进行演示.实际使用中,需将要添加的控制器类先定义好,然后初始化分别添加.
         
         
-        for _ in 0..<titles.count {
+//        for _ in 0..<titles.count {
             // 注意这里的写法!!!加载sb用这玩意
             let vc  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IndentTableViewController")
             //            vc.view.backgroundColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0)
+            var processView = vc as! IndentTableViewController
+            processView.processes = "1/2/3/4/5"
             childVcs.append(vc)
-        }
-        let pageContentView = PageContentView(frame: contentFrame, childViewControllers: childVcs, parentViewController: self!)
-        pageContentView.delegate = self
-        return pageContentView
+            // 注意这里的写法!!!加载sb用这玩意
+            let vc1  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IndentTableViewController")
+            //            vc.view.backgroundColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0)
+            var doneView = vc1 as! IndentTableViewController
+            doneView.processes = "6"
+            childVcs.append(vc1)
+            // 注意这里的写法!!!加载sb用这玩意
+            let vc2  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IndentTableViewController")
+            //            vc.view.backgroundColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1.0)
+            var cancelView = vc2 as! IndentTableViewController
+            cancelView.processes = "7"
+            childVcs.append(vc2)
+    //        }
+            let pageContentView = PageContentView(frame: contentFrame, childViewControllers: childVcs, parentViewController: self!)
+            pageContentView.delegate = self
+            return pageContentView
         }()
 //    private lazy var pageContentView: PageContentView = {[weak self] in
 //        let height = UIScreen.main.bounds.height - 65 - 44

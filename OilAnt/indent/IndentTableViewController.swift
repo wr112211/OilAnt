@@ -16,6 +16,8 @@ class IndentTableViewController: UITableViewController {
     private var indentList = [IndentEntry]()
     
     let userDefault = UserDefaults.standard
+    
+    var processes = "1/2/3/4/5"//请求参数
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,7 +57,7 @@ class IndentTableViewController: UITableViewController {
         //            pro = p;
         //        }
         let paramsSearch = [
-            "processes": "1/2/3/4/5",
+            "processes": processes,
             "pageNumber": "0"
         ]
         
@@ -90,7 +92,7 @@ class IndentTableViewController: UITableViewController {
                 }
                 self.indentList = baseModel.data!
                 self.tableView.reloadData()
-                print("goodName === \(self.indentList[0].goodName) ")
+//                print("goodName === \(self.indentList[0].goodName) ")
             }
             
         }
