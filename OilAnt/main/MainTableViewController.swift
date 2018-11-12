@@ -9,14 +9,15 @@
 import UIKit
 import Alamofire
 import HandyJSON
+import MJRefresh
 
 
-let SERVICE_URL = "http://testoil.plan-solve.com";
+let SERVICE_URL = "http://ymyapp.plan-solve.com";//testoil  //ymyapp
 let advancedSearch = "/carry/combinedQuery";//首页筛选
 
-
+//DelegatePush登陆成功回调刷新主页
 class MainTableViewController: UITableViewController, DelegatePush {
-    
+    //DelegatePush登陆成功回调刷新主页
     func method() {
         self.requestList()
     }
@@ -24,10 +25,77 @@ class MainTableViewController: UITableViewController, DelegatePush {
 
     private var indentList = [IndentEntry]()
     
+    private var indentListNet = [IndentEntry]()
+    
     let userDefault = UserDefaults.standard
 
     var headerView: UIView!
     
+    var pageNumber = 0
+    
+    //顶部下拉刷新
+    //let top_header = MJRefreshNormalHeader()//这个是原声的样式,不能自定一图片轮播
+    let top_header_style = MJRefreshGifHeader()//这个可以设置下拉刷新的图片动画效果
+    //底部上拉加载
+    let bottom_footer = MJRefreshAutoNormalFooter()
+ 
+    //顶部下拉刷新时执行的函数
+    @objc func headerRefresh(){
+        print("下拉刷新了")
+        self.pageNumber = 0
+        //服务器请求数据的函数
+        self.requestList()
+    }
+    
+    //上拉加载执行的函数
+    @objc func buttomFooterLoad(){
+        print("上拉加载")
+        //服务器请求数据的函数
+        self.requestList()
+    }
+    
+    //初始化下拉刷新/上拉加载
+    func initMJRefresh(){
+        //下拉刷新相关设置
+        top_header_style.setRefreshingTarget(self, refreshingAction: #selector(MainTableViewController.headerRefresh))
+        // Set the ordinary state of animated images
+//        var idleImages = [UIImage]()
+//        //添加动画图片
+//        for i in 1...3 {
+//            idleImages.append(UIImage(named:"b\(i)")!)
+//        }
+//        top_header_style.setImages(idleImages, for: .idle)
+//
+//        top_header_style.setImages(idleImages, for: .pulling)
+//
+//        top_header_style.setImages(idleImages, for: .refreshing)
+        //隐藏时间
+        top_header_style.lastUpdatedTimeLabel.isHidden = true
+        //隐藏状态
+        top_header_style.stateLabel.isHidden = true
+        //将下拉刷新控件与 tableView控件绑定起来
+        self.tableView.mj_header = top_header_style
+    
+        //初始化上拉加载
+        init_bottomFooter()
+    }
+    
+    //上拉加载初始化设置
+    func init_bottomFooter(){
+        //上刷新相关设置
+        bottom_footer.setRefreshingTarget(self, refreshingAction: #selector(MainTableViewController.buttomFooterLoad))
+        //self.bottom_footer.stateLabel.isHidden = true // 隐藏文字
+        //是否自动加载（默认为true，即表格滑到底部就自动加载,这个我建议关掉,要不然效果会不好）
+        bottom_footer.isAutomaticallyRefresh = false
+        bottom_footer.isAutomaticallyChangeAlpha = true //自动更改透明度
+        //修改文字
+        bottom_footer.setTitle("上拉上拉上拉", for: .idle)//普通闲置的状态
+        bottom_footer.setTitle("加载加载加载", for: .refreshing)//正在刷新的状态
+        bottom_footer.setTitle("没有没有更多数据了", for: .noMoreData)//数据加载完毕的状态
+        //将上拉加载的控件与 tableView控件绑定起来
+        self.tableView.mj_footer = bottom_footer
+    }
+   
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return indentList.count
     }
@@ -153,6 +221,7 @@ class MainTableViewController: UITableViewController, DelegatePush {
         print(self)
      
         
+        initMJRefresh()
 //        let objectValue:Any? = self.userDefault.object(forKey: "session")
 //        if (objectValue == nil){
         
@@ -178,12 +247,12 @@ class MainTableViewController: UITableViewController, DelegatePush {
             //            "deliveryToDate": "",
             //            "deliveryEndDate": "",
             //            "goodCategory": "",
-            "pageNumber": "0",
+            "pageNumber": pageNumber,
             "keyWord": "",
             //            "processes": "",
             "pageSize": "20",
             //            "finishCity" : ""
-        ]
+            ] as [String : Any]
         
         let objectValue:Any? = self.userDefault.object(forKey: "session")
         print("\(objectValue as! String)")
@@ -199,6 +268,7 @@ class MainTableViewController: UITableViewController, DelegatePush {
             let dic = (response.result.value as! NSDictionary)
             if let baseModel = JSONDeserializer<ResponseEntry>.deserializeFrom(dict: dic){
                 print("baseModel.code=== \(baseModel.code)")
+               
                 if(baseModel.code != "200"){
                     let alertController = UIAlertController(title: baseModel.msg,
                                                             message: nil, preferredStyle: .alert)
@@ -208,10 +278,21 @@ class MainTableViewController: UITableViewController, DelegatePush {
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
                         self.presentedViewController?.dismiss(animated: false, completion: nil)
                     }
+                    self.tableView.mj_footer.endRefreshing()
                 } else {
-                    
-                    self.indentList = baseModel.data!
+                    if(self.pageNumber == 0){
+                        self.indentList = [IndentEntry]()
+                    }
+                    self.indentListNet = baseModel.data!
                     //                    DispatchQueue.main.async { [weak self] in
+                    if(self.indentListNet.count > 0){
+                        self.pageNumber = Int(self.pageNumber) + 1
+                        self.tableView.mj_footer.endRefreshing()
+                    } else {
+                        //结束刷新
+                        self.tableView.mj_footer.endRefreshingWithNoMoreData()
+                    }
+                    self.indentList = self.indentList + self.indentListNet
                     self.tableView.reloadData()
                     //                        print("goodName === \(self.indentList[0].goodName) ")
                     //                    }

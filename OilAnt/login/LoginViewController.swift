@@ -45,17 +45,17 @@ class LoginViewController: UIViewController {
             //                    }
             //              }else{
             
-            let cstorage = HTTPCookieStorage.shared
-            if let cookies = cstorage.cookies {
-                for cookie:HTTPCookie in cookies {
-                    //                    print("name：\(cookie.name)", "value：\(cookie.value)")
-                    
-                    let userDefault = UserDefaults.standard
-                    
-                    userDefault.set("\(cookie.name)=\(cookie.value)", forKey: "session")
-                    
-                }
-            }
+//            let cstorage = HTTPCookieStorage.shared
+//            if let cookies = cstorage.cookies {
+//                for cookie:HTTPCookie in cookies {
+//                    //                    print("name：\(cookie.name)", "value：\(cookie.value)")
+//                    
+//                    let userDefault = UserDefaults.standard
+//                    
+//                    userDefault.set("\(cookie.name)=\(cookie.value)", forKey: "session")
+//                    
+//                }
+//            }
             self.delegate?.method()
             self.dismiss(animated: true, completion: nil)
             //实例化一个将要跳转的viewController
@@ -140,17 +140,17 @@ class LoginViewController: UIViewController {
                                  parameters: parameters,
                                  encoding: encoding,
                                  headers: headers).responseJSON { (response) in
-                                    let sessionStr = (response.response!.allHeaderFields)["Set-Cookie"]
+                                    var sessionStr = (response.response!.allHeaderFields)["Set-Cookie"]
                                     
                                     print(sessionStr)
-                                    let sss = sessionStr as! String
+                                    var sss = sessionStr as! String
                                     if(sss.contains("funny")){
                                         
-                                        let i = sss.range(of: "; Path=/,")
-                                        let j = sss.range(of: "; Path=/;")
-                                        let subStr = sss.substring(with:(i?.upperBound)!..<(j?.lowerBound)!)
+                                        var i = sss.range(of: "; Path=/,")
+                                        var j = sss.range(of: "; Path=/;")
+                                        var subStr = sss.substring(with:(i?.upperBound)!..<(j?.lowerBound)!)
                                         print(subStr)
-                                        let userDefault = UserDefaults.standard
+                                        var userDefault = UserDefaults.standard
                                         
                                         userDefault.set(subStr, forKey: "session")
                                         
