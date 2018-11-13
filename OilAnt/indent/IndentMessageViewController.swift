@@ -152,7 +152,7 @@ class IndentMessageViewController: UIViewController, MAMapViewDelegate, AMapSear
             annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees($0.location.latitude), longitude: CLLocationDegrees($0.location.longitude))
             
             if $0.distance < 200 {
-                annotation.title = "红包区域内开锁任意i小黄车"
+                annotation.title = "红包区域内开锁任意小黄车"
                 annotation.subtitle = "骑行10分钟l可获得现金红包"
             } else {
                 annotation.title = "正常可用"
