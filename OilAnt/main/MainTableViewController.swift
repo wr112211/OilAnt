@@ -139,9 +139,15 @@ class MainTableViewController: UITableViewController, DelegatePush {
     {
         print("beginLocation")
         //实例化一个将要跳转的viewController
-        let mainView = CitySelectorViewController()
-        //跳转
-        self.present(mainView , animated: true, completion: nil)
+//        let mainView = CitySelectorViewController()
+//        //跳转
+//        self.navigationController?.pushViewController(mainView , animated: true)
+        
+        let vc = CitySelectorViewController.init()
+        gy_showSide(configuration: { (config) in
+            config.direction = .right
+            config.animationType = .translationMask
+        }, viewController: vc)
     }
     
     @objc func picTap2()
@@ -150,7 +156,10 @@ class MainTableViewController: UITableViewController, DelegatePush {
         //实例化一个将要跳转的viewController
         let mainView = CitySelectorViewController()
         //跳转
-        self.present(mainView , animated: true, completion: nil)
+//        self.present(mainView , animated: true, completion: nil)
+        self.navigationController?.pushViewController(mainView , animated: true)
+        
+        
     }
     
     @objc func picTap3()

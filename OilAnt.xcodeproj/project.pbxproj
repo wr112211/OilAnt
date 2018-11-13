@@ -29,6 +29,12 @@
 		1A71F0A72191335C0015217A /* IndentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A62191335C0015217A /* IndentCell.swift */; };
 		1A71F0A9219134090015217A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F0A8219134090015217A /* LoginViewController.swift */; };
 		1A95A7CA21991BA7007365A2 /* DelegatePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95A7C921991BA7007365A2 /* DelegatePush.swift */; };
+		1A962416219A8A8C005BB7DB /* GYSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962410219A8A8C005BB7DB /* GYSide.swift */; };
+		1A962417219A8A8C005BB7DB /* GYSideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962411219A8A8C005BB7DB /* GYSideAnimatedTransitioning.swift */; };
+		1A962418219A8A8C005BB7DB /* GYSideConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962412219A8A8C005BB7DB /* GYSideConfig.swift */; };
+		1A962419219A8A8C005BB7DB /* GYSideMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962413219A8A8C005BB7DB /* GYSideMaskView.swift */; };
+		1A96241A219A8A8C005BB7DB /* GYSidePercentInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962414219A8A8C005BB7DB /* GYSidePercentInteractiveTransition.swift */; };
+		1A96241B219A8A8C005BB7DB /* GYSideTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A962415219A8A8C005BB7DB /* GYSideTransitioningDelegate.swift */; };
 		1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699112193D1AD005404B5 /* IndentTabController.swift */; };
 		1A9699192193D1FA005404B5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699172193D1FA005404B5 /* PageContentView.swift */; };
 		1A96991A2193D1FA005404B5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9699182193D1FA005404B5 /* PageTitleView.swift */; };
@@ -87,6 +93,12 @@
 		1A71F0A62191335C0015217A /* IndentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentCell.swift; sourceTree = "<group>"; };
 		1A71F0A8219134090015217A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1A95A7C921991BA7007365A2 /* DelegatePush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePush.swift; sourceTree = "<group>"; };
+		1A962410219A8A8C005BB7DB /* GYSide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSide.swift; sourceTree = "<group>"; };
+		1A962411219A8A8C005BB7DB /* GYSideAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSideAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		1A962412219A8A8C005BB7DB /* GYSideConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSideConfig.swift; sourceTree = "<group>"; };
+		1A962413219A8A8C005BB7DB /* GYSideMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSideMaskView.swift; sourceTree = "<group>"; };
+		1A962414219A8A8C005BB7DB /* GYSidePercentInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSidePercentInteractiveTransition.swift; sourceTree = "<group>"; };
+		1A962415219A8A8C005BB7DB /* GYSideTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSideTransitioningDelegate.swift; sourceTree = "<group>"; };
 		1A9699112193D1AD005404B5 /* IndentTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTabController.swift; sourceTree = "<group>"; };
 		1A9699172193D1FA005404B5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		1A9699182193D1FA005404B5 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -239,6 +251,20 @@
 			path = CitySelectors;
 			sourceTree = "<group>";
 		};
+		1A96240F219A8A8C005BB7DB /* GYSide */ = {
+			isa = PBXGroup;
+			children = (
+				1A962410219A8A8C005BB7DB /* GYSide.swift */,
+				1A962411219A8A8C005BB7DB /* GYSideAnimatedTransitioning.swift */,
+				1A962412219A8A8C005BB7DB /* GYSideConfig.swift */,
+				1A962413219A8A8C005BB7DB /* GYSideMaskView.swift */,
+				1A962414219A8A8C005BB7DB /* GYSidePercentInteractiveTransition.swift */,
+				1A962415219A8A8C005BB7DB /* GYSideTransitioningDelegate.swift */,
+			);
+			name = GYSide;
+			path = ../../../GYSide/Classes;
+			sourceTree = "<group>";
+		};
 		1A9699152193D1FA005404B5 /* PageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +307,7 @@
 		1AD8190D21904C98005B98A3 /* OilAnt */ = {
 			isa = PBXGroup;
 			children = (
+				1A96240F219A8A8C005BB7DB /* GYSide */,
 				1A9699152193D1FA005404B5 /* PageView */,
 				1AD8193C219056CB005B98A3 /* OilAnt-Bridging-Header.h */,
 				1AD8191A21904CAF005B98A3 /* Info.plist */,
@@ -593,6 +620,7 @@
 			files = (
 				1A4754E72192D74F00A7F892 /* RecentCitiesableViewCell.swift in Sources */,
 				1A18FFFB21913B8B00D98728 /* MyPinAnnotation.swift in Sources */,
+				1A96241A219A8A8C005BB7DB /* GYSidePercentInteractiveTransition.swift in Sources */,
 				1A58053B21913879008797E0 /* IndentMessageViewController.swift in Sources */,
 				1A18000521913F3B00D98728 /* MineTableViewController.swift in Sources */,
 				1A71F0A9219134090015217A /* LoginViewController.swift in Sources */,
@@ -603,18 +631,23 @@
 				1AE24F7D2191938900EA6BCB /* DriverViewController.swift in Sources */,
 				1A4754ED2192D78300A7F892 /* CitySelectorViewController.swift in Sources */,
 				1A71F0A3219131DE0015217A /* MainTableViewController.swift in Sources */,
+				1A962416219A8A8C005BB7DB /* GYSide.swift in Sources */,
 				1A4754E12192D71E00A7F892 /* UIColor+Hex.swift in Sources */,
 				1A9699122193D1AD005404B5 /* IndentTabController.swift in Sources */,
 				1A71F0A72191335C0015217A /* IndentCell.swift in Sources */,
 				1A4754E22192D71E00A7F892 /* String+SoolyCitySelector.swift in Sources */,
 				1A95A7CA21991BA7007365A2 /* DelegatePush.swift in Sources */,
+				1A962418219A8A8C005BB7DB /* GYSideConfig.swift in Sources */,
 				1A4754DC2192D6E700A7F892 /* Header.swift in Sources */,
+				1A962417219A8A8C005BB7DB /* GYSideAnimatedTransitioning.swift in Sources */,
 				1A18FFFF21913C1D00D98728 /* IndentTableViewController.swift in Sources */,
+				1A96241B219A8A8C005BB7DB /* GYSideTransitioningDelegate.swift in Sources */,
 				1AD8190F21904C98005B98A3 /* AppDelegate.swift in Sources */,
 				1A4754E92192D74F00A7F892 /* HotCityTableViewCell.swift in Sources */,
 				1A9699192193D1FA005404B5 /* PageContentView.swift in Sources */,
 				1A4754E82192D74F00A7F892 /* CurrentCityTableViewCell.swift in Sources */,
 				1A71F0A5219133160015217A /* ResponseEntry.swift in Sources */,
+				1A962419219A8A8C005BB7DB /* GYSideMaskView.swift in Sources */,
 				1A4754EE2192D78300A7F892 /* ResultTableViewController.swift in Sources */,
 				1A18000121913C9100D98728 /* IndentStateCell.swift in Sources */,
 			);

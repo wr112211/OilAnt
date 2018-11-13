@@ -65,6 +65,7 @@ class CitySelectorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupUI()
     }
     
@@ -81,20 +82,20 @@ class CitySelectorViewController: UIViewController {
         self.navigationItem.titleView = titleView
 
       
-        // 设置导航条
-        self.title = "选择城市"
-        self.navigationController?.navigationBar.barTintColor = mainColor
-        self.navigationController?.navigationBar.tintColor = mainColor
-        self.navigationController?.navigationBar.titleTextAttributes = {[
-            NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)
-            ]}()
-       
-        let leftBarBtn = UIBarButtonItem(title: "取消", style: .plain, target: self,
-                                         action: #selector(backToPrevious))
-//        self.navigationItem.leftBarButtonItem = leftBarBtn
-        self.navigationItem.title = "选择城市"
-        self.navigationItem.rightBarButtonItem = leftBarBtn
+//        // 设置导航条
+//        self.title = "选择城市"
+//        self.navigationController?.navigationBar.barTintColor = mainColor
+//        self.navigationController?.navigationBar.tintColor = mainColor
+//        self.navigationController?.navigationBar.titleTextAttributes = {[
+//            NSAttributedString.Key.foregroundColor: UIColor.white,
+//            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)
+//            ]}()
+//       
+//        let leftBarBtn = UIBarButtonItem(title: "取消", style: .plain, target: self,
+//                                         action: #selector(backToPrevious))
+////        self.navigationItem.leftBarButtonItem = leftBarBtn
+//        self.navigationItem.title = "选择城市"
+//        self.navigationItem.rightBarButtonItem = leftBarBtn
     
         
         // 设置tableView
