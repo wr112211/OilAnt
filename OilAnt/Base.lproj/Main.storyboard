@@ -19,24 +19,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IndentCell" rowHeight="120" id="6nA-Gd-Bhs" customClass="IndentCell" customModule="OilAnt" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IndentCell" rowHeight="120" id="6nA-Gd-Bhs" customClass="IndentCell" customModule="OilAnt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6nA-Gd-Bhs" id="dA7-zP-ntt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-59-ZmY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="40.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f1-4G-8FD">
-                                                    <rect key="frame" x="10" y="10.5" width="285" height="21"/>
+                                                    <rect key="frame" x="10" y="10.5" width="251" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-PG-NFF">
-                                                    <rect key="frame" x="305" y="10.5" width="60" height="21"/>
+                                                    <rect key="frame" x="271" y="10.5" width="60" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="VIl-ON-1c4"/>
                                                     </constraints>
@@ -55,17 +55,17 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRq-XF-2ge">
-                                            <rect key="frame" x="0.0" y="40.5" width="375" height="40"/>
+                                            <rect key="frame" x="0.0" y="40.5" width="341" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5T-iw-2LH">
-                                                    <rect key="frame" x="10" y="10" width="285" height="21"/>
+                                                    <rect key="frame" x="10" y="10" width="251" height="21"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut9-SL-RAN">
-                                                    <rect key="frame" x="305" y="10" width="60" height="21"/>
+                                                    <rect key="frame" x="271" y="10" width="60" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="n9X-rd-MfG"/>
                                                     </constraints>
@@ -85,7 +85,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzi-CK-jve">
-                                            <rect key="frame" x="0.0" y="91.5" width="375" height="40"/>
+                                            <rect key="frame" x="0.0" y="91.5" width="341" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-9A-Pa7">
                                                     <rect key="frame" x="10" y="10" width="260" height="21"/>
@@ -136,7 +136,7 @@
                                     <outlet property="goodname" destination="w5T-iw-2LH" id="FLD-to-Ni3"/>
                                     <outlet property="priceLable" destination="V7e-rT-CAM" id="4au-3c-xa0"/>
                                     <outlet property="stateLable" destination="PzV-PG-NFF" id="n13-8J-cwM"/>
-                                    <segue destination="qA2-uC-crO" kind="showDetail" identifier="ShowMapView" id="v6R-1R-MVo"/>
+                                    <segue destination="TPe-K7-udW" kind="push" identifier="ShowMapView" id="wQs-Ln-a9t"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -149,7 +149,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQz-dG-1HU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="261"/>
+            <point key="canvasLocation" x="1873" y="232"/>
         </scene>
         <!--Indent Message View Controller-->
         <scene sceneID="MQ5-vd-dxv">
@@ -159,19 +159,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWo-ae-xDn">
-                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWo-ae-xDn">
+                                <rect key="frame" x="0.0" y="468" width="375" height="150"/>
+                                <color key="backgroundColor" name="theme"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="5FU-Ne-IJe"/>
+                                    <constraint firstAttribute="height" constant="150" id="2RI-fO-j94"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GWo-ae-xDn" firstAttribute="leading" secondItem="oGE-yQ-Qy9" secondAttribute="leadingMargin" id="AnB-OC-Srf"/>
-                            <constraint firstItem="GWo-ae-xDn" firstAttribute="bottom" secondItem="oGE-yQ-Qy9" secondAttribute="bottomMargin" id="WxB-tF-tUw"/>
-                            <constraint firstItem="GWo-ae-xDn" firstAttribute="trailing" secondItem="oGE-yQ-Qy9" secondAttribute="trailingMargin" id="wIw-QS-LUh"/>
+                            <constraint firstItem="GWo-ae-xDn" firstAttribute="leading" secondItem="oGE-yQ-Qy9" secondAttribute="leadingMargin" constant="-16" id="96D-uR-5pi"/>
+                            <constraint firstItem="GWo-ae-xDn" firstAttribute="trailing" secondItem="oGE-yQ-Qy9" secondAttribute="trailingMargin" constant="16" id="jMi-Xf-vBo"/>
+                            <constraint firstItem="GWo-ae-xDn" firstAttribute="bottom" secondItem="l0R-3D-rzS" secondAttribute="bottom" id="rQ8-xt-wjx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l0R-3D-rzS"/>
                     </view>
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tc-a8-f9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4968.8000000000002" y="-62.518740629685162"/>
+            <point key="canvasLocation" x="2854" y="232"/>
         </scene>
         <!--首页-->
         <scene sceneID="tbb-D9-cFz">
@@ -204,7 +204,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFn-yt-wvO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="260"/>
+            <point key="canvasLocation" x="980" y="232"/>
         </scene>
         <!--我的-->
         <scene sceneID="MY2-X9-5IO">
@@ -497,7 +497,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHf-Gc-y2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="959.37031484257875"/>
+            <point key="canvasLocation" x="598" y="960"/>
         </scene>
         <!--Driver Table View Controller-->
         <scene sceneID="JFH-1c-jNE">
@@ -979,22 +979,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrW-G3-m01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2405.5999999999999" y="957.57121439280365"/>
-        </scene>
-        <!--Driver View Controller-->
-        <scene sceneID="oWQ-oG-QER">
-            <objects>
-                <viewController id="RWz-AY-Gqr" customClass="DriverViewController" customModule="OilAnt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mME-xh-b3N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mUv-kW-rpo"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jeO-qf-NLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1201" y="1657"/>
+            <point key="canvasLocation" x="2204" y="960"/>
         </scene>
         <!--Indent Tab Controller-->
         <scene sceneID="yad-fP-rHS">
@@ -1133,7 +1118,6 @@
                                     <outlet property="goodname" destination="yE5-19-ziO" id="59d-SM-GnM"/>
                                     <outlet property="priceLabel" destination="uPx-wZ-yQn" id="wTO-2r-yWI"/>
                                     <outlet property="stateLabel" destination="ysG-Gw-bOq" id="5WG-e8-a6N"/>
-                                    <segue destination="qA2-uC-crO" kind="showDetail" identifier="ShowMapView" id="yQe-ve-5xL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1146,7 +1130,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBT-eh-IMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3394" y="-528"/>
+            <point key="canvasLocation" x="2724" y="-510"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="5W6-9d-9do">
@@ -1336,24 +1320,6 @@
             </objects>
             <point key="canvasLocation" x="-161" y="27"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JXA-Vo-vZw">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qA2-uC-crO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Gb-wL-Crd">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="TPe-K7-udW" kind="relationship" relationship="rootViewController" id="68u-YU-hXe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zlA-ef-Nqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4188" y="-61.619190404797607"/>
-        </scene>
         <!--City Selector View Controller-->
         <scene sceneID="gs6-Pa-bXc">
             <objects>
@@ -1369,7 +1335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qt-9j-zTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4039" y="633"/>
+            <point key="canvasLocation" x="3772" y="958"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBb-nx-X4h">
@@ -1387,7 +1353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkU-7M-WQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="959"/>
+            <point key="canvasLocation" x="1404" y="959"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fQ7-Bi-Ujq">
@@ -1405,7 +1371,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJn-e7-Ej8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="633"/>
+            <point key="canvasLocation" x="2998" y="958"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2k0-Dl-9Ua">
@@ -1460,7 +1426,4 @@
             <color red="0.92900002002716064" green="0.59200000762939453" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="yQe-ve-5xL"/>
-    </inferredMetricsTieBreakers>
 </document>

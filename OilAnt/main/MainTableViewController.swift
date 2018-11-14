@@ -226,7 +226,7 @@ class MainTableViewController: UITableViewController, DelegatePush {
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         self.navigationItem.title = "主页"
         
-        self.navigationItem.setHidesBackButton(true, animated: true)
+//        self.navigationItem.setHidesBackButton(true, animated: true)
         print(self)
      
         
@@ -320,7 +320,7 @@ class MainTableViewController: UITableViewController, DelegatePush {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       self.performSegue(withIdentifier: "ShowMapView", sender: "mainview")
+//       self.performSegue(withIdentifier: "ShowMapView", sender: "mainview")
     }
   
     
@@ -329,12 +329,16 @@ class MainTableViewController: UITableViewController, DelegatePush {
         // Pass the selected object to the new view controller.
         if segue.identifier == "ShowMapView"{
             let row = tableView.indexPathForSelectedRow!.row
-            let destination = segue.destination as! UINavigationController
+//            let destination = segue.destination as! UINavigationController
 //        let controller = (destination.viewControllers.first as! IndentMessageViewController)
-//
+
 //        controller.idStr = (sender as? String)!
-            let controller = (destination.viewControllers.first as! IndentMessageViewController)
-            controller.idStr = "mainview \(row)"
+//            let controller = (destination.viewControllers.first as! IndentMessageViewController)
+//            controller.idStr = "mainview \(row)"
+            
+            let destination = segue.destination as! IndentMessageViewController
+            destination.idStr = "mainview \(row)"
+            
         }
     }
 }
