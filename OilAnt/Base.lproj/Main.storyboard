@@ -154,13 +154,13 @@
         <!--Indent Message View Controller-->
         <scene sceneID="MQ5-vd-dxv">
             <objects>
-                <viewController id="TPe-K7-udW" customClass="IndentMessageViewController" customModule="OilAnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="TPe-K7-udW" customClass="IndentMessageViewController" customModule="OilAnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGE-yQ-Qy9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWo-ae-xDn">
-                                <rect key="frame" x="0.0" y="468" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                                 <color key="backgroundColor" name="theme"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="2RI-fO-j94"/>

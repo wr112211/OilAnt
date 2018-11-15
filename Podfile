@@ -6,14 +6,14 @@ target 'OilAnt' do
   use_frameworks!
 
   
-  pod 'SWRevealViewController'
+#  pod 'SWRevealViewController'
   pod 'Alamofire'
   pod 'HandyJSON'
   pod 'MJRefresh'
   pod 'AMap3DMap'
   pod 'AMapSearch'
   pod 'AMapLocation'
-  pod 'AMapNavi'
+#  pod 'AMapNavi'
   pod 'SnapKit'
   
 
